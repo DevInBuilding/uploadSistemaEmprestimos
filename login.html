@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAÇA LOGIN - SISTEMA DE EMPRÉSTIMO DE EQUIPAMENTOS</title>
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <div id="cabecalho">
+            <h2 id="titulo">SISTEMA DE EMPRÉSTIMO DE EQUIPAMENTOS</h2>
+        </div>
+      
+        <nav class="menu">
+            <ul>
+                <li class="menuItems"><a href="#" id="btnHome">Home</a></li>
+                <li class="menuItems"><a href="#" id="btnCtg">Catálogo</a></li>
+                <li class="menuItems"><a href="#" id="btnCtt">Contato</a></li>
+                <li class="menuItems"><input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquise aqui..."></li>
+                <li class="menuItems"><input type="button" name="btnPesquisa" value="OK" id="btnPesquisa"></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <!-- INÍCIO -->
+
+    <form>
+
+        <h1 id="tituloLogin">Seja bem-vindo(a)</h1> <br>
+
+            <fieldset class="fieldset-entrada" id="fieldLogin">
+                <legend id="legendLogin"><label for="inputLogin" id="labelLogin"><strong>Login </strong></label></legend>
+                <input type="text" id="inputLogin" placeholder="Insira aqui seu login" autocomplete="off">
+            </fieldset>
+
+            <fieldset class="fieldset-entrada" id="fieldSenha">
+                <legend id="legendSenha"><label for="inputSenha" id="labelSenha"><strong>Senha </strong></label></legend>
+                <input type="password" id="inputSenha" placeholder="Insira aqui sua senha" autocomplete="off">
+            </fieldset>
+        
+        <fieldset id="fieldRadio">
+            <legend>Selecione o nível de acesso</legend>
+            <div class="radio">
+                <input type="radio" name="nivelacesso" id="nadm" value="ADMINISTRADOR"> <label for="nadm">Administrador</label>
+                <input type="radio" name="nivelacesso" id="nchefe" value="CHEFE"> <label for="nchefe">Chefe de Setor</label>
+                <input type="radio" name="nivelacesso" id="nuser" value="USUARIO" checked> <label for="nuser">Usuário</label>
+                <input type="radio" name="nivelacesso" id="nfun" value="FUNCIONARIO"> <label for="nfun">Funcionário</label>
+            </div>
+        </fieldset><br/>
+
+    </form>
+
+    <button id="entrar" onclick="entrar()">Entrar</button>
+
+    <!-- FIM -->
+    <footer class="rodape">
+        <p>&copy; Desenvolvido por Lucas Barros e Pedro Silveira</p>
+    </footer>
+
+    <script src="javascript/login.js"></script>
+
+</body>
+</html>
