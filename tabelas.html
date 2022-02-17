@@ -40,6 +40,10 @@
         button#editar{
             background-color: #008f00;
         }
+        button#devolver{
+            background-color: #d18f00;
+            font-weight: bolder;
+        }
     </style>
 </head>
 
@@ -342,40 +346,40 @@
                         <td class="itensDesc">Data de Cadastro</td>
                         <td class="itensDesc">Situação</td>
                     </tr>
-                    <tr>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
+                    <tr class="linha-tabela-eq">
+                        <td class="id-equipamento">2</td>
+                        <td class="nome-equipamento">Monitor</td>
+                        <td class="categoria-equipamento">Eletrônicos</td>
+                        <td class="cadastro-equipamento">06/10/2015</td>
+                        <td class="situacao-equipamento">Disponível</td>
                     </tr>
-                    <tr>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
+                    <tr class="linha-tabela-eq">
+                        <td class="id-equipamento">3</td>
+                        <td class="nome-equipamento">Lousa Interativa</td>
+                        <td class="categoria-equipamento">Eletrônicos</td>
+                        <td class="cadastro-equipamento">22/07/2016</td>
+                        <td class="situacao-equipamento">Indisponível</td>
                     </tr>
-                    <tr>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
+                    <tr class="linha-tabela-eq">
+                        <td class="id-equipamento">4</td>
+                        <td class="nome-equipamento">Laptop</td>
+                        <td class="categoria-equipamento">Eletrônicos</td>
+                        <td class="cadastro-equipamento">08/03/2020</td>
+                        <td class="situacao-equipamento">Disponível</td>
                     </tr>
-                    <tr>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
+                    <tr class="linha-tabela-eq">
+                        <td class="id-equipamento">5</td>
+                        <td class="nome-equipamento">Carregador Portátil</td>
+                        <td class="categoria-equipamento">Eletrônicos</td>
+                        <td class="cadastro-equipamento">01/12/2018</td>
+                        <td class="situacao-equipamento">Disponível</td>
                     </tr>
-                    <tr>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
-                        <td>Qualquer</td>
+                    <tr class="linha-tabela-eq">
+                        <td class="id-equipamento">6</td>
+                        <td class="nome-equipamento">Impressora</td>
+                        <td class="categoria-equipamento">Eletrônicos</td>
+                        <td class="cadastro-equipamento">29/04/2017</td>
+                        <td class="situacao-equipamento">Disponível</td>
                     </tr>
                 </tbody>
             </table>
@@ -502,6 +506,54 @@
 
 
         <!-- SEÇÃO USUÁRIOS -->
+        <div id="tabelaEmprestimos">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="itensDesc">ID</td>
+                        <td class="itensDesc">Equipamento</td>
+                        <td class="itensDesc">Categoria</td>
+                        <td class="itensDesc">Data de Devolução</td>
+                        <td class="itensDesc">Devolver</td>
+                    </tr>
+                    <tr>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td><button id="devolver">↪</button></td>
+                    </tr>
+                    <tr>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td><button id="devolver">↪</button></td>
+                    </tr>
+                    <tr>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td><button id="devolver">↪</button></td>
+                    </tr>
+                    <tr>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td><button id="devolver">↪</button></td>
+                    </tr>
+                    <tr>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td>Qualquer</td>
+                        <td><button id="devolver">↪</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div id="tabelaReservas">
             <table>
                 <tbody>
@@ -510,7 +562,7 @@
                         <td class="itensDesc">Equipamento</td>
                         <td class="itensDesc">Categoria</td>
                         <td class="itensDesc">Status</td>
-                        <td class="itensDesc">Remover</td>
+                        <td class="itensDesc">Cancelar</td>
                     </tr>
                     <tr>
                         <td>Qualquer</td>
