@@ -9,6 +9,20 @@ const modalUser = document.querySelector('.modal-user');
 const modalFunc = document.querySelector('.modal-func');
 const overlay = document.querySelector('.overlay');
 
+let cadastroID = document.querySelector('input#cIdFunc');
+let cadastroNome = document.querySelector('input#cNomeFunc');
+let cadastroSetor = document.querySelector('input#cSetor');
+let cadastroData = document.querySelector('input#cDataAdmissao');
+let cadastroSalario = document.querySelector('input#cSalario');
+let btnSalvarDados = document.querySelector('button#btnSalvar');
+
+//SALVAR DADOS DO FUNCIONÁRIO
+const salvarDados = function(){
+    if(cadastroID.getAttribute("") || cadastroNome.getAttribute("") || cadastroData.getAttribute("") || cadastroSalario.getAttribute("") ){
+        window.alert(`Preencha todos os campos`);
+    }
+}
+
 // FECHANDO AS JANELAS DE CADASTRO
 const closeModalFunc = function() {
     modalFunc.classList.add('hidden');
